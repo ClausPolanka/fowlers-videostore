@@ -67,12 +67,4 @@ public class Customer {
 
 		return result;
 	}
-
-    public double getTotal() {
-        return totalAmount;
-    }
-
-    public int getFrequentRenterPoints() {
-        return frequentRenterPoints;
-    }
 }
