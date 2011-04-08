@@ -5,6 +5,8 @@ import java.util.Vector;
 //This is the original code before refactoring begins
 
 public class Customer {
+    private Object frequentRenterPoints;
+
     public Customer(String name) {
 		_name = name;
 	}
@@ -18,7 +20,7 @@ public class Customer {
 	}
 
 	public String statement() {
-        int totalAmount = 0;
+        double totalAmount = 0;
         int frequentRenterPoints = 0;
 		Enumeration rentals = _rentals.elements();
 		String result = "Rental Record for " + getName() + "\n";
@@ -64,4 +66,5 @@ public class Customer {
 
     private String _name;
     private Vector _rentals = new Vector();
+
 }
