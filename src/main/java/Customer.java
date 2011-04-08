@@ -5,7 +5,6 @@ import java.util.Vector;
 //This is the original code before refactoring begins
 
 public class Customer {
-    private Object frequentRenterPoints;
 
     public Customer(String name) {
 		_name = name;
